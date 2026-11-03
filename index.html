@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulrehman | Web Developer Portfolio</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar Section -->
+    <header>
+        <div class="logo">Abdulrehman<span>.</span></div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="badge">Full-Stack Web Developer</span>
+                <h1>Hi, I'm <span class="highlight">Abdulrehman</span></h1>
+                <p>I build modern, high-performance, and responsive websites using HTML, CSS, JavaScript, and PHP.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-box">
+                    <img src="IMAGES/abdulrehman (2).png" alt="Abdulrehman Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Passionate Web Developer & Freelancer</h3>
+                <p>I specialize in building custom web applications, multi-page business websites, and high-converting landing pages. My main goal is to solve real-world problems through clean, efficient code and outstanding user interfaces.</p>
+                <div class="personal-info">
+                    <div class="info-item"><span>Name:</span> Abdulrehman</div>
+                    <div class="info-item"><span>Status:</span> Available for Freelance</div>
+                    <div class="info-item"><span>Languages:</span> Urdu, English</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon html"></i>
+                <h3>HTML5</h3>
+                <p>Semantic markup, Accessibility & SEO friendly structure.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt skill-icon css"></i>
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, Animations & Responsive UI Design.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js skill-icon js"></i>
+                <h3>JavaScript</h3>
+                <p>DOM Manipulation, ES6+, Async API Fetch & Interactivity.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-php skill-icon php"></i>
+                <h3>PHP</h3>
+                <p>Server-side scripting, Form handling & Routing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">Corporate Website</span>
+                    <h3>EagleComply.com</h3>
+                    <p>A multi-page architecture website with contact routing, clean HTML/CSS design, and dynamic PHP backend processing.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">Portfolio</span>
+                    <h3>Dark Web Developer Portfolio</h3>
+                    <p>A modern dark-themed single page application portfolio with smooth scrolling, social integration, and responsive layout.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="userName" placeholder="Your Name" required>
+                    <input type="email" id="userEmail" placeholder="Your Email" required>
+                </div>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="userMessage" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+            <div id="formNotification" class="notification hidden"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <span>Abdulrehman</span>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
