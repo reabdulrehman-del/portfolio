@@ -408,15 +408,77 @@ footer span {
     .input-group {
         flex-direction: column;
     }
-    <form action="https://api.web3forms.com/submit" method="POST">
-
-    <!-- Yahan apni Web3Forms ki Access Key dalni hai (Neeche bataya gaya hai kaise milegi) -->
-    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-    
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    
-    <button type="submit">Send Message</button>
-</form>
+    /* Contact Section & Form Styling (European Minimalist Dark Theme) */
+#contact {
+    padding: 80px 20px;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+#contact p {
+    color: #888888;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 15px 18px;
+    background-color: #161616;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+#contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contact button[type="submit"] {
+    padding: 15px;
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+   
+
