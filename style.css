@@ -408,4 +408,15 @@ footer span {
     .input-group {
         flex-direction: column;
     }
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Yahan apni Web3Forms ki Access Key dalni hai (Neeche bataya gaya hai kaise milegi) -->
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+    
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    
+    <button type="submit">Send Message</button>
+</form>
 }
