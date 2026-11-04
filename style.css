@@ -480,5 +480,44 @@ footer span {
     background-color: #e0e0e0;
     transform: translateY(-2px);
 }
-   
+   /* WhatsApp Floating Button Styling */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #20ba5a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    color: #ffffff;
+}
+
+/* Mobile Screens ke liye adjustment */
+@media (max-width: 600px) {
+    .whatsapp-float span {
+        display: none; /* Mobile par sirf icon dikhane ke liye */
+    }
+    .whatsapp-float {
+        padding: 14px;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 20px;
+    }
+}
 
